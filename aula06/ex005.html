@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p id="paragrafo">aqui vai o resultado</p>
+    <p name="outro-paragrafo">aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div class="mensagem">Clique em mim</div>
+    <div id="outra-mensagem">Clique aqui também</div>
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'bisque'
+        //Por Marca/Tag
+        var titulo = window.document.getElementsByTagName('h1') [0]
+        titulo.style.color = 'brown'
+
+        //Por ID
+        var p1 = window.document.getElementById('paragrafo')
+        p1.style.background = 'white'
+
+        //Por Nome
+        var p2 = window.document.getElementsByName('outro-paragrafo')[0]
+
+        //Por Classe
+        var div1 = window.document.getElementsByClassName('mensagem')
+        window.document.write(p2.innerHTML)
+
+        //Por seletor
+        var div2 = window.document.querySelector('div#outra-mensagem')
+        div2.innerHTML = 'Estou aguardando'
+
+    </script>
+    
+</body>
+</html>

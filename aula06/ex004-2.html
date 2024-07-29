@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 1em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var num = Number(window.prompt("escreva um número"))
+        document.write(`O número é: ${num.toFixed(2).replace('.', ',')} <br> `)
+
+        var n1 = Number(window.prompt("Digite um Valor"))
+        document.write(`o valor é: ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+
+        /*
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        significa:
+
+        string localizada (parte do mundo). localizada em 'pt-BR' {contribuições, atributos, é um obj em JS}
+        */
+    </script>
+</body>
+</html>
