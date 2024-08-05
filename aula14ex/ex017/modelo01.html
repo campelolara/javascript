@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <style>
+        body {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            background-color: rgb(0, 42, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section {
+            background-color: aliceblue;
+            width: 50vw;
+            height: 40vh;
+            border-radius: 20px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1em;
+        }
+
+        div {
+            margin-left: 30px;
+        }
+
+        h1, footer > p {
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <label for="txtnum">Número: </label>
+            <input type="number" name="txtnum" id="txtnum">
+        </div>
+        <div>
+            <input type="button" value="Gerar Tabuada" onclick="calcular()">
+        </div>
+        <div>
+            <select name="tabuada" id="seltab">
+
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
