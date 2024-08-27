@@ -6,12 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>lorem</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni doloribus tempore quia vel neque pariatur numquam illum magnam, natus tenetur? Sed eos adipisci omnis sequi architecto aspernatur ad, molestias ex?</p>
+    <h1>Estudos em DOM</h1>
+    <p id="parag">Aqui vai o resultado</p>
+    <p name="par"> Aprendendo a usar DOM em JavaScript</p>
+    <div class="div1">Clique em mim</div>
+    <div id="div2">Clique aqui também</div>
     
     <script>
-        var num = Number(window.prompt("Digite um valor:"))
-        document.write(`o valor é ${num.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+        var corpo = window.document.body 
+        corpo.style.background = 'blue'
+        //por tag
+        var titulo = window.document.getElementsByTagName('h1') [0]
+        titulo.style.color = 'white'
+
+        //por ID
+        var paragrafo = window.document.getElementById('parag')
+        paragrafo.style.color = 'red'
+
+        //por nome 
+        var outroParagrafo = window.document.getElementsByName('par') [0]
+        outroParagrafo.style.color = 'yellow'
+
+        //por classe
+        var d1 = window.document.getElementsByClassName('div1') [0]
+        d1.style.color = 'gray'
+
+        //por seletor
+        var d2 = window.document.querySelector('div#div2')
+        d2.style.color = 'red'
+
     </script>
 </body>
 </html>
